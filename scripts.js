@@ -42,7 +42,7 @@ function playRound(playerSelection, computerSelection) {
         return 1;
     }
     else {
-        return "Error...";
+        return 3;
     }
 } 
 
@@ -61,6 +61,10 @@ function game() {
         }
         else if (result == 2) {
             computerScore++;
+        }
+        else if (result == 3) {
+            console.log("Unknown error 3");
+            break;
         }
         rounds++;
     }
